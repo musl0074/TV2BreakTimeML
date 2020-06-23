@@ -2,9 +2,9 @@ from pymongo import MongoClient
 import pandas as pd
 
 #Vi opretter forbindelsen til vores MongoDB server hvor vi peger på en specifik collection.
-cluster = MongoClient("mongodb+srv://lonardi:b!n_Cm_93#tEMpr@testcluster-ruvhe.mongodb.net/<dbname>?retryWrites=true&w=majority")
-db = cluster["Testcluster"]
-collection = db["NoSQL test"]
+cluster = MongoClient("mongodb+srv://lonardi:daniel123@nosqlcluster.ruvhe.mongodb.net/<dbname>?retryWrites=true&w=majority")
+db = cluster["NoSQL"]
+collection = db["NoSQL Collection"]
 def program():
     #Menuen
     print("Velkommen til Database management Menu")
@@ -14,7 +14,6 @@ def program():
     print("tryk 4 slette et datapunkt")
     print("tryk 5 for søge i databasen")
     userInput = input()
-
 
     if userInput == "1":
         print("Name")
